@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    background: radial-gradient(hsl(240, 73%, 65%),hsl(273, 75%, 66%));
+    padding: 1em;
+}
+:root{
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    /*Gradient
+    Background gradient:*/
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    /*Neutral
+    Text*/
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    /*Dividers*/
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+.content-section{
+    background-color: white;
+    padding: 2em;
+    border-radius: 12px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.mainP{
+    font-weight: 600;
+}
+.subP{
+    font-weight: 600;
+}
+hr{
+    background-color: var(--Very-dark-grayish-blue);
+}
+.answer{
+    display: none;
+}
+.icon{
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
+/*media query*/
+@media screen and (min-width:768px){
+    body{
+        padding: 6em;
+    }
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+    }
+}
